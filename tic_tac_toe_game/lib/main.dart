@@ -61,6 +61,11 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SettingPage(),
+                  )
+                );
               },
               child: const Text('Settings'),
             ),
@@ -156,10 +161,14 @@ class SettingPage extends StatelessWidget {
       body: const Center(
         child: Column(
           children: [
-            Text('Audio'),
-          ]
+            SizedBox(height: 50.0),
+            ElevatedButton(
+              onPressed: () => _startGame(context),
+                child: Text('Audio'),
+            ),
+            ]
+            ),
         )
-      )
     );
   }
 }
