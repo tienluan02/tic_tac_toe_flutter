@@ -162,10 +162,10 @@ class SettingPage extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 50.0),
-            ElevatedButton(
-              onPressed: () => _startGame(context),
-                child: Text('Audio'),
-            ),
+            // ElevatedButton(
+            //   onPressed: () {},
+            //     child: Text('Audio'),
+            // ),
             ]
             ),
         )
